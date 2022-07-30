@@ -1,6 +1,6 @@
 const add = require('./add')
 
-describe('add()', ()=>{
+describe.concurrent('add()', ()=>{
     it('calculate the sum of numbers array', ()=>{
         // arrange
         const numbers = [1,2,3,45,5]
