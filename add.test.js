@@ -23,3 +23,13 @@ it('should return NAN if the arguments are contain strings', ()=>{
     // assert
     expect(result).toBeNaN()
 })
+
+it('should not throw an error when not passing the array as argument', ()=>{
+    // act
+    const resultFn = ()=>{
+        add()
+    }
+
+    // assert
+    expect(resultFn).not.toThrow()
+})
